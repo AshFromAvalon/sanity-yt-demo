@@ -2,11 +2,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "echo 'Building Sanity to public/studio' && cd studio && yarn && npx @sanity/cli build ../public/sanityyoutube -y && echo 'Done'",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "sanity": "cd sanityyoutube && sanity start",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "latest",
+    "next-sanity": "^1.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
