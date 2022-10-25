@@ -38,5 +38,4 @@ yarn-error.log*
 next-env.d.ts
 
 # SSH config
-ssh-key
-ssh-key.pub
+/.ssh
